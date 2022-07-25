@@ -1,0 +1,596 @@
+<!DOCTYPE HTML>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <title>Кваст</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+      }
+      .header{
+        width: 1200px;
+        margin: 1px auto 80px auto;
+        padding-top: 70px;
+        height: 480px;
+        /*background-color: burlywood;*/
+        background-image: url("./img/Fields_Wheat_Ear_botany_Trail_576248_2560x1574.jpg");
+        color: white;
+      }
+      .logo{
+        width: 800px;
+        margin: 0 auto 0 auto;
+        /*background-color: red;*/
+        display: flex;
+        justify-content:  space-between;
+        align-items: center;
+      }
+      .links-logo{
+      width: 600px;
+        height: 56px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-top: lightgrey solid 1px;
+          border-bottom: lightgrey solid 1px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .links-logo a{
+        color: white;
+        text-decoration: none;
+      }
+      .h1-header{
+        width: 600px;
+        margin: 100px auto 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        text-align: center;
+      }
+      h2{
+        font-size: 38px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .h2-new{
+        width: 1000px;
+        margin: 0 auto 70px auto;
+        /*font-size: 27px;*/
+        padding-left: 200px;
+        /*font-family: Arial, Helvetica, sans-serif;*/
+      }
+      .bottles{
+        display: flex;
+        width: 800px;
+        margin: 0 auto 100px auto;
+        justify-content: space-between;
+      }
+      .bottle1-2{
+        padding: 0 28px 0 28px;
+        border-left: solid 1px lightgrey;
+
+      }
+      .bottle2-dop{
+        border-right: solid 1px lightgray;
+      }
+
+      .bottle-table{
+        display: flex;
+        margin-bottom: 55px;
+      }
+      .table{
+        width: 150px;
+        height: 100px;
+        margin-left: 37px;
+        border-collapse: collapse;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      td {
+        border: 1px solid lightgrey;
+        padding-left: 10px;
+      }
+      .compound{
+        margin-left: 37px;
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+      }
+      .compound-1{
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        line-height: 32px;
+        margin-bottom: 55px;
+      }
+      .bottoms{
+        display: flex;
+      }
+      button{
+        display: block;
+        padding: 15px 20px;
+        font-size: 16px;
+        margin-right: 7px;
+        border: solid 2px saddlebrown;
+      }
+      .btn-3{
+        margin-right: 0;
+        padding: 15px 10px;
+        background-color: white;
+        border: solid white;
+      }
+      .btn-1{
+        background-color: white;
+        color: saddlebrown;
+      }
+      .btn-2{
+        background-color: saddlebrown;
+        color: white;
+      }
+      .about-us{
+        background-color: #FDDB6D;
+        width: 1200px;
+        margin: 0 auto 80px auto;
+        padding: 80px 0;
+        display: flex;
+      }
+      .about-us div{
+        flex-grow: 1;
+        border-right: solid 2px saddlebrown;
+        text-align: start;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 0 85px;
+      }
+      .about-us p{
+        line-height: 30px;
+      }
+
+      .about-us div:last-child{
+        border-right: 0;
+      }
+      .history-kvas{
+        width: 800px;
+        padding: 0 200px 0 200px;
+        margin: 0 auto 30px auto;
+        display: flex;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+      }
+      .history-kvas h3{
+        color: black;
+      }
+      .history-kvas p{
+        line-height: 30px;
+        padding-right: 60px;
+      }
+      .history-kvas a{
+        color: saddlebrown;
+      }
+      .history-kvas span{
+        display: block;
+        margin: 20px 0 30px;
+      }
+      .about-us-1{
+        background-color: antiquewhite;
+        width: 1200px;
+        margin: 0 auto 80px auto;
+        padding: 60px 0 60px;
+      }
+      .about-us-1 h2{
+        padding: 0 200px ;
+        margin-bottom: 70px;
+      }
+      .about-us-1 p{
+        padding: 0 200px ;
+        margin-bottom: 70px;
+      }
+      .about-us-1 p{
+        line-height: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+      }
+      .about-us-1-div{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 200px ;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #btn-id{
+        background-color: antiquewhite;
+        color: lightgrey;
+        border-color: grey;
+      }
+      .range{
+        width: 800px;
+        padding: 0 200px 0 200px;
+        margin: 0 auto 90px auto;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .range div{
+        padding: 20px 0 20px 0;
+        border-bottom: solid 1px lightgrey;
+      }
+      .span-1{
+        min-width: 70px;
+        display: inline-block;
+        margin-left: 144px;
+      }
+      .span-2{
+        margin-left: 20px;
+        min-width: 70px;
+        display: inline-block;
+      }
+      .span-3{
+        margin-left: 0;
+        min-width: 70px;
+        display: inline-block;
+      }
+      .span-4{
+        text-align: end;
+        min-width: 155px;
+        display: inline-block;
+      }
+      .range div:nth-of-type(1){
+        color: grey;
+        font-size: 11px;
+      }
+      .span-width{
+        min-width: 250px;
+        display: inline-block;
+      }
+      .about-us-dop{
+        background-color: #FDDB6D;
+        margin-bottom: 0;
+      }
+      .div-form{
+        padding: 0 360px 0 200px;
+        margin-bottom: 70px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .label{
+        margin-bottom: 12px;
+      }
+      .input, select{
+        margin-bottom: 20px;
+      }
+      #input-1, #input-2, #input-3, #input-4, #input-5, #input-6{
+        width: 636px;
+        height: 50px;
+        background-color: burlywood;
+        border: none;
+      }
+      #input-5{
+        width: 600px;
+        margin-bottom: 20px;
+      }
+      #input-6{
+        height: 120px;
+      }
+      .div-tel{
+        display: flex;
+        justify-content: space-between;
+      }
+      .div-tel-1-2 #input-2, #input-3{
+        width: 302px;
+      }
+      .option{
+        padding: 0 20px 0 20px;
+      }
+      .select{
+        width: 600px;
+        height: 50px;
+        background-color: burlywood;
+        border: none;
+        color: blanchedalmond;
+      }
+      #checkbox{
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+
+      #checkbox+label::before {
+        content: '';
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        flex-shrink: 0;
+        flex-grow: 0;
+        border: 2px solid saddlebrown;
+        border-radius: 0.25em;
+        margin-right: 30px;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+      }
+      #checkbox:checked+label::before {
+        border-color: saddlebrown;
+        background-color: burlywood;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+      }
+
+      .custom-btn {
+        margin-bottom: 40px;
+      }
+      .futer{
+        background-color: black;
+        width: 1200px;
+        margin: 0 auto 0;
+        padding-top: 70px;
+      }
+      .futer-1{
+        background-color: black;
+        width: 820px;
+        margin: 0 auto 0;
+        padding: 70px 190px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .futer-1 .img{
+        border: 1px solid grey;
+        margin: 0;
+      }
+      .logo-html{
+        width: 52px;
+        height: 52px;
+        border: 1px solid grey;
+        background: url("./img/htmlacademy.png") no-repeat 50% 50%;
+        margin-right: 25px;
+      }
+      .author{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+
+
+
+
+
+
+    </style>
+  </head>
+  <body>
+  <section class="header">
+    <div class="logo">
+    <img src="./img/logo.png" alt="logo">
+    <nav class="links-logo">
+     <a href="#history">ИСТОРИЯ</a>
+      <a href="#production">ПРОИЗВОДСТВО</a>
+      <a href="#range">АССОРТИМЕНТ</a>
+      <a href="#order">ГДЕ КУПИТЬ</a>
+    </nav>
+    </div>
+      <div class="h1-header">
+    <h1>Крафтовый квас всему голова!</h1>
+      </div>
+  </section>
+  <div class="h2-new"><h2>НОВИНКИ</h2></div>
+  <section class="bottles">
+    <section class="bottle1-2">
+      <h2>ВАХТЕР</h2>
+      <div class="bottle-table">
+      <img src="./img/bottle-left1.jpg" alt="bottle-1" width="#" height="#">
+      <div>
+        <table class="table">
+        <tr>
+          <td>АЛК.</td>
+          <td>< 1%</td>
+        </tr>
+        <tr>
+          <td>ККАЛ</td>
+          <td>35</td>
+        </tr>
+      </table>
+        <p class="compound">Ржаной хлеб, Вода, Солод, Соль</p>
+      </div>
+      </div>
+      <p class="compound-1">Терпкий и мощный, вкус этого кваса взбодрит после тяжёлого дня и придаст сил для вечерних приключений! </p>
+      <div class="bottoms">
+        <div><button class="btn-1">ПОДРОБНЕЕ</button></div>
+        <div><button class="btn-2">КУПИТЬ</button></div>
+        <div><button class="btn-3">150 Р.</button></div>
+      </div>
+    </section>
+    <section class="bottle1-2 bottle2-dop">
+      <h2>РОМАНТИК</h2>
+      <div class="bottle-table">
+      <img src="./img/bottle-right2.jpg" alt="bottle-2"width="#" height="#" >
+        <div>
+      <table class="table">
+        <tr>
+          <td>АЛК.</td>
+          <td>< 0,5%</td>
+        </tr>
+        <tr>
+          <td>ККАЛ</td>
+          <td>27</td>
+        </tr>
+      </table>
+          <p class="compound">Ячменный хлеб, Вода, Солод, Апельсин</p>
+          </div>
+        </div>
+      <p class="compound-1">Легкий и освежающий напиток поможет сохранить отличное настроение в течении всего дня.</p>
+      <div class="bottoms">
+        <div><button class="btn-1">ПОДРОБНЕЕ</button></div>
+        <div><button class="btn-2">КУПИТЬ</button></div>
+        <div><button class="btn-3">90 Р.</button></div>
+      </div>
+    </section>
+
+  </section>
+  <section class="about-us">
+    <div>
+      <h3 id="production">ВАРИМ САМИ</h3>
+      <p>Вот этими самыми руками. Эксперементируем и творим, что хотим.</p>
+    </div>
+    <div>
+      <h3>СВОЕ, РОДНОЕ</h3>
+      <p>Не заработка ради, а импортозамещения для. Поднимаем производство.</p>
+    </div>
+    <div>
+      <h3>НЕ ЭКОНОМИМ</h3>
+      <p>Человек это то, что он есть и пьет. У нас только качественные ингридиенты.</p>
+    </div>
+  </section>
+  <div class="h2-new"><h2 id="history">НЕМНОГО ИСТОРИИ</h2></div>
+  <article class="history-kvas" >
+    <div>
+      <h3>ПРОИСХОЖДЕНИЕ КВАСА</h3>
+      <p>Квас на Руси появился в X-XI веке.
+        Само слово «квас» тоже имеет древнерусское происхождение.
+        Помимо России квас готовят в Белоруссии, Сербии, Македонии,
+        Словакии и многих других странах, но называется он везде одинаково — квас.</p>
+    </div>
+    <div>
+      <span><em>Источник:</em><a href="ru.wikipedia.org"><em> ru.wikipedia.org</em></a></span>
+      <img src="./img/wiki-1.png" alt="old kvas">
+    </div>
+  </article>
+  <article class="history-kvas" >
+    <div>
+      <h3>КЛАССИФИКАЦИЯ КВАСА</h3>
+      <p>По российскому ГОСТу для промышленного изготовления -
+        это напиток с обьемной долей этилового спирта не более 1,2%, изготовленный
+      в результате незавершенного спиртового и молочнокислого брожения сусла.</p>
+    </div>
+    <div>
+      <span><em>Источник:</em><a href="ru.wikipedia.org"><em> ru.wikipedia.org</em></a></span>
+      <img src="./img/wiki-2.png" alt="old kvas">
+    </div>
+  </article>
+
+  <section class="about-us-1">
+    <h2>ПРЕССА О НАС</h2>
+    <p>Сегодня мы провели дегустацию чего-то действительно новенького-крафтового кваса.
+    Да, да, вы не ослышались! Спасибо Арсену и Руслану за то,
+      что предоставили целую бочку своего напитка.</p>
+    <div class="about-us-1-div">
+      <button id="btn-id">ЧИТАТЬ ДАЛЕЕ</button>
+      <h3>ГАЗЕТА СТОЛИЧНЫЙ СТОЛЬНИК</h3>
+    </div>
+  </section>
+
+  <div class="h2-new"><h2 id="range">АССОРТИМЕНТ</h2></div>
+
+  <section class="range">
+    <div>
+      <span class="span-width">НАЗВАНИЕ</span>
+      <span class="span-1">АЛК.</span>
+      <span class="span-2">ККАЛ</span>
+      <span class="span-3">ОБЬЕМ</span>
+      <span class="span-4">СТОИМОСТЬ</span>
+    </div>
+    <div>
+      <span class="span-width">КЛАССИКА</span>
+      <span class="span-1">< 1,2%</span>
+      <span class="span-2">33</span>
+      <span class="span-3">330 МЛ</span>
+      <span class="span-4">120 Р.</span>
+    </div>
+    <div>
+      <span class="span-width">ШАБАШ</span>
+      <span class="span-1">> 1,2%</span>
+      <span class="span-2">45</span>
+      <span class="span-3">330 МЛ</span>
+      <span class="span-4">250 P.</span>
+    </div>
+    <div>
+      <span class="span-width">ВАХТЕР</span>
+      <span class="span-1">< 1%</span>
+      <span class="span-2">35</span>
+      <span class="span-3">0,5 Л</span>
+      <span class="span-4">150 Р.</span>
+    </div>
+    <div>
+      <span class="span-width">РОМАНТИК</span>
+      <span class="span-1">< 0,5%</span>
+      <span class="span-2">27</span>
+      <span class="span-3">0,5 Л</span>
+      <span class="span-4">90 Р.</span>
+    </div>
+  </section>
+
+  <section class="about-us-1 about-us-dop">
+    <h2 id="order">ЗАКАЗАТЬ</h2>
+    <p>
+      Не ждите пока нас отрекламируют, как Вятский квас, и мы поднимем цены!
+      Закажите настоящий крафтовый квас сейчас. При заказе от 10 баррелей-скидка 10%.
+    </p>
+    <div class="div-form">
+      <form action="#" method="post" >
+        <div class="label"><label for="input-1" >ПРЕДСТАВЬТЕСЬ:</label></div>
+        <div class="input"><input id="input-1" type="text" name="name"></div>
+        <div class="div-tel">
+          <div class="div-tel-1-2">
+            <div class="label"><label for="input-2" >НОМЕР ТЕЛЕФОНА:</label></div>
+            <div class="input"><input id="input-2" type="tel" name="tel"></div>
+          </div>
+          <div class="div-tel-1-2">
+            <div class="label"><label for="input-3" >ДОП. НОМЕР:</label></div>
+            <div class="input"><input id="input-3" type="tel" name="tel-1"></div>
+          </div>
+          </div>
+        <div class="label"><label for="input-4" >EMAIL:</label></div>
+        <div class="input"><input id="input-4" type="email" name="email"></div>
+
+        <div class="label"><label for="input-5" >ОБЬЕМ ЗАКАЗА:</label></div>
+        <div id="input-5" class="option">
+        <select name="#" class="select">
+          <option value="" disabled selected>ОТ 5 ДО 10 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+          <option value="5">5 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+          <option value="6">6 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+          <option value="7">7 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+          <option value="8">8 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+          <option value="9">9 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+          <option value="10">10 БАРРЕЛЕЙ В НЕДЕЛЮ</option>
+        </select>
+        </div>
+
+        <div class="label"><label for="input-6" >ДОП. КОММЕНТАРИЙ:</label></div>
+        <div class="input"><textarea id="input-6" name="comments"></textarea></div>
+
+        <div class="custom-btn">
+          <input id="checkbox" type="checkbox" name="checkbox" checked>
+          <label for="checkbox">Я СОГЛАСЕН ПОЛУЧАТЬ КВАСНУЮ РАССЫЛКУ</label>
+        </div>
+        <button class="btn-2">ОТПРАВИТЬ ЗАКАЗ</button>
+      </form>
+
+    </div>
+
+  </section>
+
+  <section class="futer">
+  <div class="logo">
+    <img src="./img/logo.png" alt="logo">
+    <nav class="links-logo">
+      <a href="#">ИСТОРИЯ</a>
+      <a href="#">ПРОИЗВОДСТВО</a>
+      <a href="#">АССОРТИМЕНТ</a>
+      <a href="#">ГДЕ КУПИТЬ</a>
+    </nav>
+  </div>
+  </section>
+  <section class="futer-1">
+    <nav>
+      <a href="https://vk.com" target="_blank" title="Велкам к нам в вк!"><img class="img" src="./img/VK_black.png" alt="VK" width="52"></a>
+      <a href="https://www.instagram.com" target="_blank" title="Наши друзья в инсте!"><img class="img" src="./img/Instagram_black.png" alt="Insta" width="52"></a>
+      <a href="https://ru-ru.facebook" target="_blank" title="Приседеняйся к нам в facebook!"><img class="img" src="./img/Facebook_black.png" alt="FB" width="52"></a>
+    </nav>
+    <div class="author">
+      <div class="logo-html"></div>
+      <div>author A. NISENBAUM</div>
+    </div>
+
+
+
+  </section>
+
+
+
+
+  </body>
+</html>
